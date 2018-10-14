@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".EditProfile">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/actAvatarImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/logo"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/actAvatarImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="FULL NAME"
+        android:textColor="#de2920"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/epFullNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="10dp"
+        android:hint="type your full name"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MY EMAIL"
+        android:textColor="#de2920"
+        android:textStyle="bold"
+        android:layout_below="@+id/epFullNameTxt"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/epEmailTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="loading..."
+        android:textColor="#222"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/epEmailTxt"
+        android:layout_marginTop="20dp"
+        android:text="MY College"
+        android:textColor="#de2920"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/epHospitalTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:text="loading..."
+        android:textColor="#222"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MY Specialty"
+        android:textColor="#de2920"
+        android:textStyle="bold"
+        android:layout_below="@+id/epHospitalTxt"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/epSpecialtyTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:text="loading..."
+        android:textColor="#222"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MY ID Number"
+        android:textColor="#de2920"
+        android:textStyle="bold"
+        android:layout_below="@+id/epSpecialtyTxt"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/epIDN"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:text="loading..."
+        android:textColor="#222"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:id="@+id/epUpdateButt"
+        android:background="#de2920"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/epIDN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to change avatar"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/actAvatarImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
